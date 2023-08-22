@@ -9,7 +9,7 @@ export const projectsData = [
     id: 1,
     image: eshop,
     title:'Ecommerce Website',
-    category: 'Web',
+    category: 'Django',
     link:'https://github.com/Kumarsatwik/ecommerce-website.git',
 },
 
@@ -17,24 +17,59 @@ export const projectsData = [
     id: 2,
     image: elearning,
     title:'Learning Management Website',
-    category: 'Web',
+    category: 'Django',
     link:'https://github.com/Kumarsatwik/Udemy-Clone.git',
 },
 
 {
     id: 3,
-    image: Blog,
-    title:'Blog Website',
-    category: 'App',
-    link:'https://blog-m39cbcqyz-kumarsatwik.vercel.app/',
+    image: "https://ik.imagekit.io/3wzfnznig/rock%20paper.png?updatedAt=1692719939870",
+    title:'Rock Paper Scissors Game',
+    category: 'HTML/CSS',
+    link:'https://rock-paper-scissors-tau-sandy.vercel.app/',
 },
 
 {
     id: 4,
-    image: Food,
-    title:'Food Website',
-    category: 'App',
+    image: "https://ik.imagekit.io/3wzfnznig/food.png?updatedAt=1692719940742",
+    title:'Landing Page Food Website',
+    category: 'React',
     link:'https://food-website-cwl2.vercel.app/',
+},
+{
+    id: 5,
+    image: "https://ik.imagekit.io/3wzfnznig/credit%20card.png?updatedAt=1692719940116",
+    title:'Credit Card',
+    category: 'React',
+    link:'https://credit-card-one-tawny.vercel.app/',
+},
+{
+    id: 6,
+    image: "https://ik.imagekit.io/3wzfnznig/spotify.png?updatedAt=1692719940656",
+    title:'Spotify Clone',
+    category: 'React',
+    link:'https://github.com/Kumarsatwik/Spotify-Clone.git',
+},
+{
+    id: 7,
+    image: "https://ik.imagekit.io/3wzfnznig/inventory.png?updatedAt=1692719939905",
+    title:'Inventory Management System',
+    category: 'Django',
+    link:'https://github.com/Kumarsatwik/inventory-management-system.git',
+},
+{
+    id: 8,
+    image: "https://ik.imagekit.io/3wzfnznig/scrnli_8_22_2023_9-10-47%20PM.png?updatedAt=1692719939643",
+    title:'Tic Tac Toe Game',
+    category: 'React',
+    link:'https://tictactoe-lyart-delta.vercel.app/',
+},
+{
+    id: 9,
+    image: "https://ik.imagekit.io/3wzfnznig/password%20generator.png?updatedAt=1692719939408",
+    title:'Password Generator',
+    category: 'HTML/CSS',
+    link:' https://main--cute-cranachan-e77705.netlify.app/',
 },
 ]
 
@@ -43,9 +78,12 @@ export const projectsNav = [
         name:'All',
     },
     {
-        name:'App',
+        name:'React',
     },
     {
-        name:'Web',
+        name:'Django'
     },
+    {
+        name:'HTML/CSS'
+    }
 ]
