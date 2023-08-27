@@ -1,7 +1,6 @@
 import React from 'react'
 import "./about.css";
 import profileme from "../../assets/profileme.webp";
-import CV from "../../assets/kssb_Cv.pdf";
 import Info from "./Info"
 
 const About = () => {
@@ -18,7 +17,7 @@ const About = () => {
                 JavaScript, ReactJS, Tailwind CSS, FastAPI, and Django and Python. Proficient in enhancing database performance and
                 creating intuitive and user-friendly user interfaces.
               </p>
-              <a href={CV} download className="button button--flex">Download CV
+              <a href="https://drive.google.com/file/d/1znYK0Me4wYpROF76Y9IxlOhJYvOAk6ZN/view?usp=sharing" download className="button button--flex">Download CV
                 <svg
                   className="button__icon"
                   xmlns="http://www.w3.org/2000/svg"
