@@ -7,19 +7,19 @@ import WorkItems from "./WorkItems";
 import axios from "axios";
 
 const Works = () => {
-  const [item, setItem] = useState({ name: "all" });
+  const [item, setItem] = useState({ name: "All" });
   const [projects, setProjects] = useState([]); // State to store filtered projects
   const [allProjects, setAllProjects] = useState([]); // State to store all projects data
   const [active, setActive] = useState(0);
   useEffect(() => {
     const fetchData = async () => {
       try {
-       
-          axios.get("https://portfolio-backend-ldhx.onrender.com/get-data").then((res)=>{
-              
-              setAllProjects(res.data.projects);
-              setProjects(res.data.projects);
-          })
+        axios
+          .get("https://portfolio-backend-ldhx.onrender.com/get-data")
+          .then((res) => {
+            setAllProjects(res.data.projects);
+            setProjects(res.data.projects);
+          });
 
         // Set all projects data to allProjects state
       } catch (error) {
@@ -34,11 +34,11 @@ const Works = () => {
     if (item.name === "All") {
       setProjects(allProjects);
     } else {
-    //   console.log(item);
+      //   console.log(item);
       const newProjects = allProjects.filter((project) => {
         return project.category == item.name;
       });
-    //   console.log(newProjects);
+      //   console.log(newProjects);
       setProjects(newProjects);
     }
   }, [item, allProjects]);
