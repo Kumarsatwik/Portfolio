@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./about.css";
 import profileme from "../../assets/profileme.webp";
-import CV from "../../assets/kssb_Cv.pdf";
 import Info from "./Info";
+import axios from "axios";
 
 const About = () => {
+  const [resumeData, setResumeData] = useState("");
+  useEffect(() => {
+    axios
+      .get("https://portfolio-backend-ldhx.onrender.com/get-resume")
+      .then((res) => {
+        setResumeData(res.data?.resume[0]?.link);
+      });
+  });
   return (
     <section className="about section" id="about">
       <h2 className="section__title">About Me</h2>
@@ -21,11 +29,7 @@ const About = () => {
             enhancing database performance and creating intuitive and
             user-friendly user interfaces.
           </p>
-          <a
-            href="https://drive.google.com/file/d/1znYK0Me4wYpROF76Y9IxlOhJYvOAk6ZN/view?usp=sharing"
-            download
-            className="button button--flex"
-          >
+          <a href={resumeData} download className="button button--flex">
             Download CV
             <svg
               className="button__icon"

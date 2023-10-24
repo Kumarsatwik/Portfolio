@@ -1,15 +1,20 @@
-import React from 'react';
+import React from "react";
 
-const WorkItems = ({item}) => {
+const WorkItems = ({ item }) => {
   return (
-<div className="work__card" key={item.id}>
-    <img src={item.image} alt="" className='work__img' />
-    <h3 className="work__title">{item.title}</h3>
-    <a href={item.link} className="work__button">
-        Demo <i className="bx bx-right-arrow-alt work__button-icon" href={item.link}></i>
-    </a>
-</div>
-  )
-}
+    <div className="work__card" key={item.id}>
+      <img src={item.image} alt="" className="work__img" />
+      <h3 className="work__title">{item.title}</h3>
+      {/* <p>{item.description}</p> */}
+      <a href={item.link} className="work__button">
+        Demo{" "}
+        <i
+          className="bx bx-right-arrow-alt work__button-icon"
+          href={item.link}
+        ></i>
+      </a>
+    </div>
+  );
+};
 
-export default WorkItems
+export default WorkItems;
