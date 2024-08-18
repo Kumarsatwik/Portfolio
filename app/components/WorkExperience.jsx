@@ -64,7 +64,7 @@ const ExperienceCard = ({ experience }) => {
           className="my-4"
           dangerouslySetInnerHTML={{ __html: experience.description }}
         />
-        <div>
+        <div className="flex flex-wrap">
           {experience.technologies.map((tech, index) => (
             <motion.span
               key={index}
@@ -74,7 +74,7 @@ const ExperienceCard = ({ experience }) => {
                 scale: 1,
                 transition: { duration: 0.6, delay: index * 0.1 },
               }}
-              className="mr-2 mt-4 rounded-full border border-slate-400 px-2 py-1 font-medium text-slate-400"
+              className="mr-2 mt-4 rounded-full border border-slate-400 px-2 py-1 font-medium text-slate-400 "
             >
               {tech}
             </motion.span>
